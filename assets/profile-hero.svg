@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Saurav Kumar — backend engineering and applied AI.</title>
+  <desc id="desc">A midnight-blue animated banner with floating code symbols, orbiting lights, and rotating messages about backend systems, computer vision, and document retrieval.</desc>
+  <defs>
+    <linearGradient id="bg" x2="960" y2="320" gradientUnits="userSpaceOnUse"><stop stop-color="#080e1e"/><stop offset="1" stop-color="#19112e"/></linearGradient>
+    <linearGradient id="accent" x1="60" y1="0" x2="900" y2="320" gradientUnits="userSpaceOnUse"><stop stop-color="#67e8f9"/><stop offset=".5" stop-color="#818cf8"/><stop offset="1" stop-color="#c084fc"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#7c3aed" stop-opacity=".25"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#a5b4fc" stroke-opacity=".06"/></pattern>
+    <clipPath id="bounds"><rect x="1" y="1" width="958" height="318" rx="24"/></clipPath>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Consolas, monospace; }
+    .entrance { animation: enter 1.4s ease-out both; }
+    .float { animation: float 7s ease-in-out infinite; }
+    .orbit { transform-origin: 766px 154px; animation: orbit 24s linear infinite; }
+    .reverse { animation-direction: reverse; animation-duration: 32s; }
+    .signal { animation: signal 4s ease-in-out infinite; }
+    .trail { stroke-dasharray: 90 1300; animation: trail 10s linear infinite; }
+    .phrase { opacity: 0; animation: phrase 12s ease-in-out infinite; }
+    .second { animation-delay: -8s; }
+    .third { animation-delay: -4s; }
+    @keyframes enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @keyframes signal { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+    @keyframes trail { to { stroke-dashoffset: -1390; } }
+    @keyframes phrase { 0%, 3% { opacity: 0; transform: translateY(6px); } 7%, 27% { opacity: 1; transform: translateY(0); } 32%, 100% { opacity: 0; transform: translateY(-6px); } }
+    @media (prefers-reduced-motion: reduce) { .entrance, .float, .orbit, .signal, .trail, .phrase { animation: none; } .phrase { opacity: 0; } .first { opacity: 1; } }
+  </style>
+  <g clip-path="url(#bounds)">
+    <rect width="960" height="320" fill="url(#bg)"/>
+    <rect width="960" height="320" fill="url(#grid)"/>
+    <ellipse cx="766" cy="154" rx="240" ry="230" fill="url(#halo)"/>
+    <path d="M0 278H410L460 228H960" stroke="#818cf8" stroke-opacity=".14"/>
+    <path class="trail" d="M0 278H410L460 228H960" stroke="url(#accent)" stroke-width="2"/>
+    <g class="entrance">
+      <rect x="48" y="38" width="232" height="28" rx="14" fill="#111e32" stroke="#263d55"/>
+      <circle class="signal" cx="65" cy="52" r="4" fill="#67e8f9"/>
+      <text class="mono" x="79" y="56" fill="#a5c4dd" font-size="11" letter-spacing="1.5">SAURAVK21 / ENGINEERING</text>
+      <text x="46" y="137" fill="#f0f6fc" font-size="64" font-weight="750" letter-spacing="-2">Saurav Kumar.</text>
+      <text x="48" y="192" fill="url(#accent)" font-size="36" font-weight="650" letter-spacing="-1">Backend meets applied AI.</text>
+    </g>
+    <g class="mono" fill="#b6c5db" font-size="16">
+      <text class="phrase first" x="49" y="238">&gt; Backend systems. Applied AI.</text>
+      <text class="phrase second" x="49" y="238">&gt; Finding faces in a sea of photos.</text>
+      <text class="phrase third" x="49" y="238">&gt; Document answers. With sources.</text>
+    </g>
+    <text class="mono" x="49" y="296" fill="#94a3b8" font-size="10" letter-spacing="1.5">SAMSUNG R&amp;D / NIT SURATHKAL / BUILT WITH CURIOSITY</text>
+    <circle cx="766" cy="154" r="107" stroke="#818cf8" stroke-opacity=".22"/>
+    <circle cx="766" cy="154" r="83" stroke="#67e8f9" stroke-opacity=".14" stroke-dasharray="3 9"/>
+    <g class="orbit"><circle cx="873" cy="154" r="5" fill="#67e8f9"/><circle cx="659" cy="154" r="3" fill="#c084fc"/></g>
+    <g class="orbit reverse"><circle cx="766" cy="71" r="4" fill="#a5b4fc"/></g>
+    <g class="float">
+      <rect x="669" y="90" width="194" height="128" rx="16" fill="#0b1427" stroke="#818cf8" stroke-opacity=".55"/>
+      <path d="M669 119H863" stroke="#28344e"/>
+      <circle cx="685" cy="105" r="3" fill="#fb7185"/><circle cx="697" cy="105" r="3" fill="#fbbf24"/><circle cx="709" cy="105" r="3" fill="#34d399"/>
+      <text class="mono" x="685" y="143" fill="#94a3b8" font-size="11">$ cat focus.json</text>
+      <text class="mono" x="685" y="168" fill="#67e8f9" font-size="12">{ "build": "useful",</text>
+      <text class="mono" x="697" y="191" fill="#c4b5fd" font-size="12">"learn": "always" }</text>
+    </g>
+    <path d="M620 65h10m-5-5v10M892 247h10m-5-5v10" stroke="#67e8f9" stroke-opacity=".55"/>
+  </g>
+  <rect x="1" y="1" width="958" height="318" rx="24" stroke="#818cf8" stroke-opacity=".25"/>
+</svg>

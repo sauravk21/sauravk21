@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="206" viewBox="0 0 960 206" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering with measurable impact</title>
+  <desc id="desc">At Samsung: 200 times improvement in duplicate-image detection performance, document classification accuracy from 70 to 92 percent, and 50 percent less segmentation dataset creation time.</desc>
+  <defs><linearGradient id="accent"><stop stop-color="#67e8f9"/><stop offset="1" stop-color="#c4b5fd"/></linearGradient></defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Consolas, monospace; }
+    .edge { stroke-dasharray: 140 860; animation: trace 10s linear infinite; }
+    .second { animation-delay: -3.3s; } .third { animation-delay: -6.6s; }
+    .bar { transform-box: fill-box; transform-origin: left; animation: grow 1.8s ease-out both; }
+    @keyframes trace { to { stroke-dashoffset: -1000; } }
+    @keyframes grow { from { transform: scaleX(.03); } to { transform: scaleX(1); } }
+    @media (prefers-reduced-motion: reduce) { .edge, .bar { animation: none; } .edge { stroke-dasharray: none; opacity: .35; } }
+  </style>
+  <g fill="#0d1526" stroke="#26334b"><rect x="1" y="1" width="306" height="204" rx="18"/><rect x="327" y="1" width="306" height="204" rx="18"/><rect x="653" y="1" width="306" height="204" rx="18"/></g>
+  <g stroke="url(#accent)" stroke-width="1.5"><rect class="edge" x="1" y="1" width="306" height="204" rx="18"/><rect class="edge second" x="327" y="1" width="306" height="204" rx="18"/><rect class="edge third" x="653" y="1" width="306" height="204" rx="18"/></g>
+  <g class="mono" fill="#94a3b8" font-size="10" letter-spacing="1.4"><text x="24" y="32">01 / IMAGE CLEANUP</text><text x="350" y="32">02 / CLASSIFICATION</text><text x="676" y="32">03 / DATA PIPELINES</text></g>
+  <text x="24" y="97" fill="#67e8f9" font-size="55" font-weight="750">200×</text>
+  <text x="350" y="94" fill="#a5b4fc" font-size="40" font-weight="750">70% → 92%</text>
+  <text x="676" y="97" fill="#c4b5fd" font-size="55" font-weight="750">50%</text>
+  <g fill="#f1f5f9" font-size="15" font-weight="600"><text x="24" y="125">Performance improvement</text><text x="350" y="125">Classification accuracy</text><text x="676" y="125">Less dataset creation time</text></g>
+  <g fill="#94a3b8" font-size="12"><text x="24" y="149">Query tuning + candidate filtering</text><text x="350" y="149">Tiny-BERT + inference integration</text><text x="676" y="149">Automated segmentation datasets</text></g>
+  <g fill="url(#accent)"><rect class="bar" x="24" y="177" width="258" height="3" rx="1.5"/><rect class="bar" x="350" y="177" width="258" height="3" rx="1.5"/><rect class="bar" x="676" y="177" width="258" height="3" rx="1.5"/></g>
+</svg>

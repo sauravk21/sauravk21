@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="230" viewBox="0 0 960 230" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">DocuRAG — answers with a paper trail</title>
+  <desc id="desc">An illustrative retrieval animation connecting document passages to an answer and its source citation.</desc>
+  <defs><linearGradient id="bg" x2="960" y2="230" gradientUnits="userSpaceOnUse"><stop stop-color="#171128"/><stop offset="1" stop-color="#1f1c3a"/></linearGradient></defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Consolas, monospace; }
+    .flow { stroke-dasharray: 18 140; animation: flow 4s linear infinite; }
+    .passage { animation: passage 6s ease-in-out infinite; }
+    .cite { animation: passage 6s ease-in-out infinite; animation-delay: -3s; }
+    @keyframes flow { to { stroke-dashoffset: -158; } }
+    @keyframes passage { 0%, 100% { opacity: .3; } 35%, 70% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .flow, .passage, .cite { animation: none; } }
+  </style>
+  <rect x="1" y="1" width="958" height="228" rx="18" fill="url(#bg)" stroke="#44365b"/>
+  <text class="mono" x="30" y="37" fill="#c4b5fd" font-size="11" letter-spacing="2">02 / RETRIEVAL LAB</text>
+  <text x="29" y="91" fill="#faf5ff" font-size="34" font-weight="700">Answers with</text>
+  <text x="29" y="131" fill="#c4b5fd" font-size="34" font-weight="700">a paper trail.</text>
+  <text x="31" y="171" fill="#b9b0cf" font-size="14">Ask a question. Trace it to the source.</text>
+  <text class="mono" x="31" y="205" fill="#9587b6" font-size="10" letter-spacing="1">SPRING AI / LLAMA / PGVECTOR</text>
+  <rect x="530" y="59" width="89" height="114" rx="8" fill="#19172b" stroke="#514769"/>
+  <rect x="542" y="49" width="89" height="114" rx="8" fill="#211c35" stroke="#7b6b9e"/>
+  <g stroke="#8c7ba7" stroke-width="3" stroke-linecap="round"><path d="M559 73H613M559 89H602M559 105H611M559 121H604M559 137H594"/></g>
+  <rect class="passage" x="551" y="97" width="70" height="16" rx="3" fill="#a78bfa" fill-opacity=".22" stroke="#c4b5fd"/>
+  <path d="M631 106H722" stroke="#57456f"/><path class="flow" d="M631 106H722" stroke="#c4b5fd" stroke-width="2"/>
+  <rect x="722" y="61" width="178" height="115" rx="12" fill="#17172b" stroke="#75628f"/>
+  <text class="mono" x="738" y="84" fill="#c4b5fd" font-size="10">ANSWER + EVIDENCE</text>
+  <g stroke="#a69abb" stroke-width="3" stroke-linecap="round"><path d="M739 103H878M739 115H867M739 127H846"/></g>
+  <g class="cite"><rect x="738" y="141" width="99" height="22" rx="5" fill="#35264e" stroke="#a78bfa"/><text class="mono" x="750" y="156" fill="#ddd6fe" font-size="10">[source.pdf]</text></g>
+  <text class="mono" x="582" y="204" text-anchor="middle" fill="#aa9bbe" font-size="10">DOCUMENTS</text>
+  <text class="mono" x="811" y="204" text-anchor="middle" fill="#aa9bbe" font-size="10">GROUNDED RESPONSE</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="130" viewBox="0 0 800 130" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Think. Build. Learn. Repeat.</title>
+  <desc id="desc">Four connected cards light up in sequence, showing the cycle from an idea to the next iteration.</desc>
+  <defs><linearGradient id="accent"><stop stop-color="#67e8f9"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+  <style>
+    text { font-family: 'SFMono-Regular', Consolas, monospace; }
+    .active { opacity: .18; animation: active 8s ease-in-out infinite; }
+    .two { animation-delay: -6s; } .three { animation-delay: -4s; } .four { animation-delay: -2s; }
+    .flow { stroke-dasharray: 65 735; animation: flow 8s linear infinite; }
+    @keyframes active { 0%, 25%, 100% { opacity: .18; } 5%, 20% { opacity: 1; } }
+    @keyframes flow { to { stroke-dashoffset: -800; } }
+    @media (prefers-reduced-motion: reduce) { .active, .flow { animation: none; } .active { opacity: .7; } .flow { stroke-dasharray: none; opacity: .35; } }
+  </style>
+  <path d="M85 65H715" stroke="#334155"/>
+  <path class="flow" d="M0 65H800" stroke="url(#accent)" stroke-width="2"/>
+  <g fill="#0d1526" stroke="#26334b"><rect x="12" y="22" width="164" height="86" rx="16"/><rect x="216" y="22" width="164" height="86" rx="16"/><rect x="420" y="22" width="164" height="86" rx="16"/><rect x="624" y="22" width="164" height="86" rx="16"/></g>
+  <g fill="none" stroke="url(#accent)" stroke-width="2"><rect class="active" x="12" y="22" width="164" height="86" rx="16"/><rect class="active two" x="216" y="22" width="164" height="86" rx="16"/><rect class="active three" x="420" y="22" width="164" height="86" rx="16"/><rect class="active four" x="624" y="22" width="164" height="86" rx="16"/></g>
+  <g text-anchor="middle" fill="#e2e8f0" font-size="20" font-weight="700"><text x="94" y="61">think.</text><text x="298" y="61">build.</text><text x="502" y="61">learn.</text><text x="706" y="61">repeat.</text></g>
+  <g text-anchor="middle" fill="#94a3b8" font-size="11"><text x="94" y="85">ask better questions</text><text x="298" y="85">make it tangible</text><text x="502" y="85">follow the feedback</text><text x="706" y="85">try the next idea</text></g>
+</svg>

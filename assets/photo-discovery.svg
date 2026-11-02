@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="230" viewBox="0 0 960 230" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Event Photo Discovery — find your face in the crowd</title>
+  <desc id="desc">An illustrative face-search animation: a selfie becomes an embedding and a matching face is highlighted among event photos.</desc>
+  <defs><linearGradient id="bg" x2="960" y2="230" gradientUnits="userSpaceOnUse"><stop stop-color="#071b28"/><stop offset="1" stop-color="#10233c"/></linearGradient><linearGradient id="beam"><stop stop-color="#67e8f9" stop-opacity="0"/><stop offset=".5" stop-color="#67e8f9"/><stop offset="1" stop-color="#67e8f9" stop-opacity="0"/></linearGradient></defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Consolas, monospace; }
+    .scan { animation: scan 5s ease-in-out infinite; }
+    .match { animation: match 5s ease-in-out infinite; }
+    .flow { stroke-dasharray: 16 120; animation: flow 3s linear infinite; }
+    @keyframes scan { 0%, 100% { transform: translateY(0); opacity: .3; } 50% { transform: translateY(88px); opacity: 1; } }
+    @keyframes match { 0%, 25%, 100% { opacity: .25; } 45%, 85% { opacity: 1; } }
+    @keyframes flow { to { stroke-dashoffset: -136; } }
+    @media (prefers-reduced-motion: reduce) { .scan, .match, .flow { animation: none; } .scan { opacity: .4; } }
+  </style>
+  <rect x="1" y="1" width="958" height="228" rx="18" fill="url(#bg)" stroke="#264458"/>
+  <text class="mono" x="30" y="37" fill="#67e8f9" font-size="11" letter-spacing="2">01 / VISION LAB</text>
+  <text x="29" y="91" fill="#f0f9ff" font-size="34" font-weight="700">Find your face</text>
+  <text x="29" y="131" fill="#67e8f9" font-size="34" font-weight="700">in the crowd.</text>
+  <text x="31" y="171" fill="#a7bfd0" font-size="14">One selfie → the photos you're looking for.</text>
+  <text class="mono" x="31" y="205" fill="#7a9eb5" font-size="10" letter-spacing="1">INSIGHTFACE / QDRANT / FASTAPI</text>
+  <rect x="527" y="65" width="104" height="104" rx="16" fill="#0b1728" stroke="#47677e"/>
+  <circle cx="579" cy="103" r="17" stroke="#67e8f9" stroke-width="2"/>
+  <path d="M551 151C551 121 607 121 607 151" stroke="#67e8f9" stroke-width="2"/>
+  <path d="M631 117H729" stroke="#31546a"/><path class="flow" d="M631 117H729" stroke="#67e8f9" stroke-width="2"/>
+  <g fill="#11253b" stroke="#36536b"><rect x="730" y="52" width="76" height="60" rx="9"/><rect x="819" y="52" width="76" height="60" rx="9"/><rect x="730" y="125" width="76" height="60" rx="9"/><rect x="819" y="125" width="76" height="60" rx="9"/></g>
+  <g stroke="#7890a6" stroke-width="1.5"><circle cx="768" cy="72" r="9"/><path d="M752 100C752 82 784 82 784 100"/><circle cx="857" cy="72" r="9"/><path d="M841 100C841 82 873 82 873 100"/><circle cx="768" cy="145" r="9"/><path d="M752 173C752 155 784 155 784 173"/><circle cx="857" cy="145" r="9"/><path d="M841 173C841 155 873 155 873 173"/></g>
+  <path class="scan" d="M736 66H889" stroke="url(#beam)" stroke-width="3"/>
+  <rect class="match" x="730" y="125" width="76" height="60" rx="9" stroke="#67e8f9" stroke-width="2"/>
+  <text class="mono" x="579" y="204" text-anchor="middle" fill="#94b0c3" font-size="10">SELFIE</text>
+  <text class="mono" x="813" y="204" text-anchor="middle" fill="#94b0c3" font-size="10">SIMILARITY SEARCH</text>
+</svg>
